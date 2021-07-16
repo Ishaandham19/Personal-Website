@@ -3,6 +3,9 @@ import { CaretDownFill } from 'react-bootstrap-icons';
 
 export default function Arrow() {
     return (
-       <CaretDownFill id="arrow" className="arrow bounce" color="#08fdd8" size={25}/>
+        <div className="arrow bounce">
+            <CaretDownFill color="#08fdd8" size={30}/>
+        </div>
+       
     )
 }

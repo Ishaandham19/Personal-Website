@@ -2,7 +2,7 @@ const params =
     {
         "particles": {
           "number": {
-            "value": 80,
+            "value": 40,
             "density": {
               "enable": true,
               "value_area": 800
@@ -73,11 +73,11 @@ const params =
           "events": {
             "onhover": {
               "enable": true,
-              "mode": "slow"
+              "mode": "repulse"
             },
             "onclick": {
               "enable": false,
-              "mode": "remove"
+              "mode": "repulse"
             },
             "resize": true
           },
@@ -96,7 +96,7 @@ const params =
               "speed": 3
             },
             "repulse": {
-              "distance": 200,
+              "distance": 75,
               "duration": 0.4
             },
             "push": {

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap'); /* for main title*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap'); /* for navbar */
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap'); /* for navbar */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 /*css styling for particles.js background*/
 #particles-js{
@@ -11,21 +11,26 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   z-index: -1;
+  min-height: 500px;
 }
 
-.frontPage{
+/* styling for Home page */
+.homePage{
+  height: 100%;
+  width: 100%;
   align-content: center;
   position: relative;
+  min-height: 500px;
 }
 
 /*Main title component styling */
 #text{
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
   position: absolute;
   left: 25%;
   right: 25%;
-  top: 30%;
+  top: 40%;
   vertical-align: middle;
   color: #DEEEEA;
   text-align: center;
@@ -40,18 +45,28 @@
 /*Navbar styling */
 #navbar{
   width:100%;
-  position: absolute;
+  position: fixed;
   background-color: transparent;
 }
 
 #navbar-items{
   width:100%;
   text-align: center;
+}
+
+#navbar-link{
+  padding-right: 1%;
+  padding-left: 1%;
   font-family: 'Open Sans', sans-serif;
+  color: #EEEADE;
+}
+
+#navbar-link:hover{
+  color: #08fdd8;
 }
 
 /* Arrow down styling */
-#arrow{
+.arrow{
   position: absolute;
   left:50%;
   right:50%;
@@ -62,15 +77,265 @@
   animation: bounce 2s infinite;
 }
 
-
-@keyframes arrow {
+@keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-30px);
+    transform: translateY(-20px);
   }
   60% {
     transform: translateY(-15px);
   }
+}
+
+.icons{
+  padding: 20px;
+  color: #DEEEEA;
+}
+
+.icons:hover{
+  color: #08fdd8;
+}
+.homeIconsCol{
+  position: absolute;
+  left: 2%;
+  top: 35%;
+}
+
+.homeIconsCol a{
+  display: block;
+}
+
+/* Skills page styling */
+.skillsPage{     
+  display: flex;
+  position: relative;  
+  width: 100%;  
+  height: 100%;   
+  text-align: center;
+  justify-content: center;
+  background-color: #231e23;
+}
+
+.split{
+  width: 50%;
+}
+.left-skillsPage{
+  width: 100%;  
+  height: 100%;
+  display: flex;  
+  position: relative;
+  background-color: #231e23;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  border-right: 1px groove #08fdd8;
+}
+
+.right-skillsPage{
+  width: 100%;  
+  height: 100%; 
+  position: relative;
+  background-color: #231e23;
+  color:#DEEEEA;
+  padding: 2%;
+}
+
+
+/* Sub Title styling */
+.subTitle{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.subTitle h1{
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 1%;
+  color: #DEEEEA;
+}
+
+#cardElem{
+  align-self: center;
+  padding: 2%;
+  background-color: #231e23;
+  max-width: 30rem;
+  box-shadow: 3px 2px 4px 2px #08fdd8;
+  color: #DEEEEA;
+  text-align: center;
+}
+
+#cardElemBody{
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.skillsProgressbar{
+  width: 100%;  
+  height: 100%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressBar{
+  width:100%;
+  max-width: 25rem;
+  padding: 2px;
+}
+ 
+.progressBarTitle{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: large;
+}
+.progressBarSingle{
+  padding: 12px;
+}
+
+#bar{
+  height: 5px;
+}
+/* this is a custom bootstrap class for progress-bar */
+.progress-bar {
+  background-color: #08fdd8 !important;
+  color: #DEEEEA;
+}
+
+
+/*Education Page */
+#educationPage{
+  width: 100%;  
+  height: 100%;   
+  text-align: center;
+  justify-content: center;
+  background-color: #231e23;
+  padding: 5%;
+}
+.cardEd-container{
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+#cardEd-body{
+  /* background-color: #231e23;  if want to change ed card color*/
+}
+.card{
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 5px 1px #08fdd8;
+  font-size: large;
+  text-align: right;
+  font-size: 1.2rem;
+}
+.card-img{   /*custom bootstrap class*/
+  max-width: 400px;
+  height: 400px;
+  padding: 10px;
+  opacity: 0.5;
+}
+
+.dateTxt{
+  font-size: smaller
+}
+
+.card-text{
+}
+
+/* Projects Page*/
+.projectPage{
+  width: 100%;  
+  height: 100%;   
+  text-align: center;
+  justify-content: center;
+  background-color: #231e23;
+  padding: 5%;
+}
+
+.carousel {
+  width: 700px;
+  height: 700px;
+  margin: auto;
+}
+
+.carousel-caption{
+  top: 60%;
+  transform: translateY(-50%);    
+}
+  
+.carousel-caption h3{
+  padding: 5px;
+  color: #DEEEEA;
+}
+
+.carousel-caption p{
+  padding: 5px;
+  color: #DEEEEA;
+  font-weight: 500;
+}
+
+.carousel-item{
+  text-align: center;
+  align-content: center;
+}
+
+.carousel-item img{
+  width: 700px;
+  height: 700px;
+  opacity: 0.5;
+}
+
+/* footer */
+.footer{
+  color: #DEEEEA;
+  background-color: #231e23;
+  text-align: center;
+}
+
+/* Adjusted of styling for mobile screens. (this is the size when navbar shrinks*/
+@media screen and (max-width: 1024px) {
+  /*Home page styling*/
+  #text{
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+  }
+
+  #navbar{
+    background-color: #231e23;
+    opacity: 0.8;
+  }
+
+  #particles-js{
+    background-color: #231e23;
+    z-index: -1;
+    min-height: 500px;
+  }
+
+  /*Skills Page styling*/
+  .skillsPage{
+    padding: 10px;
+    flex-direction: column;
+  }
+  .split{
+    width: 100%;
+  }
+  .left-skillsPage{
+    padding: 20px;
+  }
+
+  /*Education Page styling*/
+  .card-img{   /*custom bootstrap class*/
+    max-width: 300px;
+    height: 300px;
+    padding: 2px;
+    opacity: 0.5;
+  }
+
+  /*Project page styling*/
+  .carousel {
+    width:auto;
+    height:auto;
+  }
+  
 }
