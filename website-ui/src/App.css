@@ -116,6 +116,7 @@
   text-align: center;
   justify-content: center;
   background-color: #231e23;
+  padding: 5%;
 }
 
 .split{
@@ -211,7 +212,7 @@
   text-align: center;
   justify-content: center;
   background-color: #231e23;
-  padding: 5%;
+  padding: 2%;
 }
 .cardEd-container{
   padding: 10px;
