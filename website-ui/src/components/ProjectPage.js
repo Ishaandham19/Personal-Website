@@ -1,5 +1,4 @@
 import React from 'react'
-import ProgressBarElem from '../ProgressBarElem'
 import ProjectsCarousel from './ProjectsCarousel'
 import SubTitle from './SubTitle'
 

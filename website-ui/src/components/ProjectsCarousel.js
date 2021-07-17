@@ -8,15 +8,15 @@ import {AiFillGithub} from 'react-icons/ai'
 const projects={
     project1: {
         name: 'Dungeon Escape - Console Based Game',
-        text: 'Dungeon Escape is a console based game that uses a procedural approach to create a maze like structure filled with monsters and stars. \
-                The goal of the game is to collect all the stars and escape the maze without encountering a monster. This was my first project in C++ \
-                and I enjoyed making a quite basic yet fun game to play.',
+        text: 'Dungeon Escape is a console based game that uses a procedural approach to create a maze like structure filled with monsters and stars. ' + 
+                'The goal of the game is to collect all the stars and escape the maze without encountering a monster. This was my first project in C++ ' +
+                'and I enjoyed making a quite basic yet fun game to play.',
         link: 'https://github.com/Ishaandham19/DungeonEscape-console-game',
     },
     project2 : {
         name: 'Interrupt Handler - Keyboard and Display',
-        text: 'Created a interrupt handler for MIPS processor that handles keyboard and display interrupts.\
-                This project enables the user to perform I/O operations without the use of specific I/O commands and with memory mapped I/O instead.'
+        text: 'Created a interrupt handler for MIPS processor that handles keyboard and display interrupts. ' +
+                'This project enables the user to perform I/O operations without the use of specific I/O commands and with memory mapped I/O instead.'
     }
 }
 

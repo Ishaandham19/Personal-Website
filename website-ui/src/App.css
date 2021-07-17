@@ -21,6 +21,7 @@
   align-content: center;
   position: relative;
   min-height: 500px;
+  background-color: #231e23;
 }
 
 /*Main title component styling */
@@ -307,13 +308,7 @@
     opacity: 0.8;
   }
 
-  #particles-js{
-    background-color: #231e23;
-    z-index: -1;
-    min-height: 500px;
-  }
-
-  /*Skills Page styling*/
+   /*Skills Page styling*/
   .skillsPage{
     padding: 10px;
     flex-direction: column;
@@ -323,6 +318,15 @@
   }
   .left-skillsPage{
     padding: 20px;
+    border-right: 0px;
+  }
+  #cardElem{
+    align-self: center;
+    background-color: #231e23;
+    max-width: 30rem;
+    box-shadow: 1px 2px 3px 1px #08fdd8;
+    color: #DEEEEA;
+    text-align: center;
   }
 
   /*Education Page styling*/
@@ -332,11 +336,32 @@
     padding: 2px;
     opacity: 0.5;
   }
+  .card{
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 4px 1px #08fdd8;
+    font-size: large;
+    text-align: right;
+    font-size: 1rem;
+  }
 
   /*Project page styling*/
   .carousel {
     width:auto;
     height:auto;
   }
-  
+  .carousel-item img{
+    width: 500px;
+    height: 500px;
+    opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: 800px){
+  #particles-js{
+    visibility: hidden;
+  }
+  .carousel-caption{
+    top: 33%;
+    transform: translateY(-50%);    
+  }
 }

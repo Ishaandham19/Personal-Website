@@ -1,5 +1,12 @@
 {
+  "homepage": "http://ishaandham19.github.io/Personal-Website",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
   "dependencies": {
-    "react-particles-js": "^3.4.1"
+    "react-particles-js": "^3.5.3"
   }
 }

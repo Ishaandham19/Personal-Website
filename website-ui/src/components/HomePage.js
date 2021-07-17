@@ -5,7 +5,6 @@ import NavbarComp from './Navbar.js'
 import MainTitle from './MainTitle';
 import Arrow from './Arrow';
 import HomeIcons from './HomeIcons';
-import Footer from './Footer';
 
 export default function HomePage() {
     return (
