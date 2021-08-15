@@ -12,15 +12,15 @@ const links={
 
 function HomeIcons() {
     return (
-        <div className="homeIconsCol"> 
+        <div className="homeIconsRow"> 
             <a className='icons' href={links.github}>
-                <AiFillGithub size={25}></AiFillGithub>
+                <AiFillGithub size={30}></AiFillGithub>
             </a>
             <a className='icons' href={links.linkedin}>
-                <AiOutlineLinkedin size={25}></AiOutlineLinkedin>
+                <AiOutlineLinkedin size={30}></AiOutlineLinkedin>
             </a>
             <a className='icons' href={links.email}>
-                <AiOutlineMail size={25}></AiOutlineMail>
+                <AiOutlineMail size={30}></AiOutlineMail>
             </a>
         </div>
     )

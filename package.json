@@ -5,8 +5,5 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build"
-  },
-  "dependencies": {
-    "react-particles-js": "^3.5.3"
   }
 }

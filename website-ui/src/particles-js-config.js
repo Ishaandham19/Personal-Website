@@ -2,7 +2,7 @@ const params =
     {
         "particles": {
           "number": {
-            "value": 40,
+            "value": 20,
             "density": {
               "enable": true,
               "value_area": 800
@@ -18,7 +18,7 @@ const params =
               "color": "#000000"
             },
             "polygon": {
-              "nb_sides": 5
+              "nb_sides": 3
             },
             "image": {
               "src": "img/github.svg",
@@ -31,7 +31,7 @@ const params =
             "random": false,
             "anim": {
               "enable": false,
-              "speed": 10,
+              "speed": 5,
               "opacity_min": 0.1,
               "sync": false
             }
@@ -47,7 +47,7 @@ const params =
             }
           },
           "line_linked": {
-            "enable": true,
+            "enable": false,
             "distance": 150,
             "color": "#ffffff",
             "opacity": 0.4,

@@ -1,13 +1,23 @@
 import React from 'react'
+import HomeIcons from './HomeIcons'
 
 export default function MainTitle() {
-    const mainTitle = ['I', 's', 'h', 'a', 'a', 'n', ' ' ,'D', 'h', 'a', 'm']
+    const mainTitle = "Ishaan Dham"
+    const subTitle = 'Student Software Developer'
 
     return (
-        <p id="text">
-            {mainTitle.map(char =>
-                <span className="title-char">{char}</span>
+        <div id="mainTitle">
+            <h1 id="text">
+            {mainTitle.split("").map(char =>
+                <span>{char}</span>
             )}
-        </p>
+            </h1>
+            <h3 id="subText">
+            {subTitle.split("").map(char =>
+                <span>{char}</span>
+            )}
+            </h3>
+            <HomeIcons></HomeIcons>
+        </div>
     )
 }

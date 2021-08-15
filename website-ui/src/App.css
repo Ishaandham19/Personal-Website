@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap'); /* for main title*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap'); /* for navbar */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-/*css styling for particles.js background*/
-#particles-js{
+.html{
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.cw {
+  position: relative;
+  z-index: -1;
   width: 100%;
   height: 100%;
   background-color: #231e23;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  z-index: -1;
-  min-height: 500px;
 }
 
 /* styling for Home page */
@@ -20,14 +19,12 @@
   width: 100%;
   align-content: center;
   position: relative;
-  min-height: 500px;
+  height: 100vh;
   background-color: #231e23;
 }
 
 /*Main title component styling */
-#text{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 4rem;
+#mainTitle{
   position: absolute;
   left: 25%;
   right: 25%;
@@ -35,18 +32,36 @@
   vertical-align: middle;
   color: #DEEEEA;
   text-align: center;
-  letter-spacing: 2px;
 }
+
+#text{
+  font-size: 5em;
+  color: #DEEEEA;
+  letter-spacing: 3px;
+  font-weight: bold;
+} 
 
 #text span:hover{
   color: #08fdd8;
 }
+#subText{
+  font-weight: bold;
+  color: #08fdd8;
+}
 
+#subText span:hover{
+  color: #DEEEEA;
+}
+
+#text h3{
+  font-size: 1.5rem;
+}
 
 /*Navbar styling */
 #navbar{
-  width:100%;
+  width: 100%;
   position: fixed;
+  font-size: 1rem;
   background-color: transparent;
 }
 
@@ -58,7 +73,9 @@
 #navbar-link{
   padding-right: 1%;
   padding-left: 1%;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: sans-serif;
   color: #EEEADE;
 }
 
@@ -98,26 +115,26 @@
 .icons:hover{
   color: #08fdd8;
 }
-.homeIconsCol{
+/* .homeIconsCol{
   position: absolute;
   left: 2%;
   top: 35%;
+} */
+.homeIconsRow{
+  padding: 10px;
 }
-
-.homeIconsCol a{
-  display: block;
+.homeIconsRow a{
+  display: inline;
 }
 
 /* Skills page styling */
 .skillsPage{     
-  display: flex;
   position: relative;  
   width: 100%;  
-  height: 100%;   
+  height: 100%; 
   text-align: center;
   justify-content: center;
   background-color: #231e23;
-  padding: 5%;
 }
 
 .split{
@@ -153,8 +170,11 @@
 .subTitle h1{
   font-size: 2.5rem;
   font-weight: 600;
-  padding: 1%;
+  padding: 4%;
   color: #DEEEEA;
+}
+.subTitle span:hover{
+  color: #08fdd8;
 }
 
 #cardElem{
@@ -209,7 +229,7 @@
 /*Education Page */
 #educationPage{
   width: 100%;  
-  height: 100%;   
+  height: 100%; 
   text-align: center;
   justify-content: center;
   background-color: #231e23;
@@ -248,44 +268,60 @@
 /* Projects Page*/
 .projectPage{
   width: 100%;  
-  height: 100%;   
+  height: 100%;  
   text-align: center;
   justify-content: center;
   background-color: #231e23;
-  padding: 5%;
 }
-
-.carousel {
-  width: 700px;
-  height: 700px;
-  margin: auto;
-}
-
-.carousel-caption{
-  top: 60%;
-  transform: translateY(-50%);    
-}
-  
-.carousel-caption h3{
-  padding: 5px;
-  color: #DEEEEA;
-}
-
-.carousel-caption p{
-  padding: 5px;
-  color: #DEEEEA;
-  font-weight: 500;
-}
-
-.carousel-item{
+#projectRow{
+  width: 100%;
   text-align: center;
-  align-content: center;
+  justify-content: center;
+}
+#projectCard{
+  width: 400px;
+  height: 400px;
+  box-shadow: 2px 2px 4px 1px #08fdd8;
+  margin: auto;
+  margin-bottom: 2%;
+  background-color: #DEEEEA;
+  align-self: center;
+  overflow: hidden;
+}
+#projectCard:hover .card-text{
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+#projectCard:hover #projectImg{
+  opacity: 0.5;
+  transition: opacity 1000ms;
+}
+#projectCard:hover #projectTitle{
+  opacity: 0;
+}
+#projectTitle{
+  opacity: 1;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #231e23;
+  background-color: transparent;
 }
 
-.carousel-item img{
-  width: 700px;
-  height: 700px;
-  opacity: 0.5;
+#projectImg{
+  width: 400px;
+  height: 330px;
+  opacity: 1;
+}
+#projectTitle{
+  font-weight: 700;
+  font-size: 1.5em;
+  align-self: center;
+}
+.card-text{
+  color: #231e23;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0;
 }
 
 /* footer */
@@ -299,10 +335,12 @@
 @media screen and (max-width: 1024px) {
   /*Home page styling*/
   #text{
-    font-size: 3.5rem;
+    font-size: 3rem;
     letter-spacing: 1px;
   }
-
+  #subText{
+    font-size: 1rem;
+  }
   #navbar{
     background-color: #231e23;
     opacity: 0.8;
@@ -345,23 +383,12 @@
   }
 
   /*Project page styling*/
-  .carousel {
-    width:auto;
-    height:auto;
+  #projectCard{
+    width: 300px;
+    height: 300px;
   }
-  .carousel-item img{
-    width: 500px;
-    height: 500px;
-    opacity: 0.5;
-  }
-}
-
-@media screen and (max-width: 800px){
-  #particles-js{
-    visibility: hidden;
-  }
-  .carousel-caption{
-    top: 33%;
-    transform: translateY(-50%);    
+  #projectImg{
+    width: 300px;
+    height: 300px;
   }
 }

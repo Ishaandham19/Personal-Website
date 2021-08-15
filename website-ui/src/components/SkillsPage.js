@@ -11,17 +11,24 @@ function SkillsPage() {
                       + "Other than that I enjoy sports, gyming, and FPS games. "
                       + "Feel free to contact me through mail or social media!"
                       
-    return ( 
-        <div className="skillsPage" id="skills">
-            <div className="left-skillsPage split">
-                <CardElem text={aboutMeText}></CardElem>
-            </div>
-            <div className="right-skillsPage split">
-                <SubTitle title="Skills"></SubTitle>
-                <ProgressBarElem></ProgressBarElem>
-            </div>
+
+    return (
+        <div className="skillsPage" id="about">
+            <SubTitle title="About Me"></SubTitle>
+            
         </div>
     )
+    // return ( 
+    //     <div className="skillsPage" id="skills">
+    //         <div className="left-skillsPage split">
+    //             <CardElem text={aboutMeText}></CardElem>
+    //         </div>
+    //         <div className="right-skillsPage split">
+    //             <SubTitle title="Skills"></SubTitle>
+    //             <ProgressBarElem></ProgressBarElem>
+    //         </div>
+    //     </div>
+    // )
 }
 
 export default SkillsPage
