@@ -4,7 +4,7 @@ import LPCLogo from './images/LPCLogo.png'
 
 function CardEdLPC() {
     return (
-      <Card className="bg-dark text-white" id="cardEd-body">
+      <Card className id="cardEd-body">
       <Card.Img src={LPCLogo} alt="Card image" />
         <Card.ImgOverlay>
           <Card.Title><b>Las Positas College </b><span className='dateTxt'> 2019 - 2021</span></Card.Title>

@@ -1,11 +1,16 @@
 import React from 'react'
 import { CaretDownFill } from 'react-bootstrap-icons';
 
+function scrollTo(id){
+    document.querySelector(id).scrollIntoView({ 
+    behavior: 'smooth' 
+})};
+
 export default function Arrow() {
     return (
-        <div className="arrow bounce">
+        <a className="arrow bounce" onClick={() => scrollTo('#about')}>
             <CaretDownFill color="#08fdd8" size={30}/>
-        </div>
+        </a>
        
     )
 }

@@ -38,24 +38,24 @@ function ProjectPage() {
     return (
         <div className='projectPage' id="projects">
             <SubTitle title='Projects'></SubTitle>
-            <Container fluid style={{padding:'5%', paddingTop:'0'}}>
+            <Container fluid id='projectsContainer'>
             <Row id='projectsRow'>
-                <Col xl={4} md={6}>
+                <Col xl={4} lg={6}>
                     <ProjectCard project = {projects.project1}></ProjectCard>
                 </Col>
-                <Col xl={4} md={6}>
+                <Col xl={4} lg={6}>
                     <ProjectCard project = {projects.project2}></ProjectCard>
                 </Col>
-                <Col xl={4} md={6}>
+                <Col xl={4} lg={6}>
                     <ProjectCard project = {projects.project3}></ProjectCard>
                 </Col>
-                <Col xl={4} md={6}>
+                <Col xl={4} lg={6}>
                     <ProjectCard project = {projects.project3}></ProjectCard>
                 </Col>
-                <Col xl={4} md={6}>
+                <Col xl={4} lg={6}>
                     <ProjectCard project = {projects.project2}></ProjectCard>
                 </Col>
-                <Col xl={4} md={6}>
+                <Col xl={4} lg={6}>
                     <ProjectCard project = {projects.project1}></ProjectCard>
                 </Col>
             </Row>

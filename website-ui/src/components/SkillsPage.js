@@ -1,21 +1,41 @@
 import React from 'react'
 import SubTitle from './SubTitle'
-import CardElem from './CardElem'
-import ProgressBarElem from '../ProgressBarElem'
+import Image from 'react-bootstrap/Image'
+import Headshot from './images/Headshot2.jpg'
+import { Row, Col, Container, ProgressBar} from 'react-bootstrap'
+import ProgressBarElem from './ProgressBarElem'
+import BlogSection from './BlogSection'
+
 
 function SkillsPage() {
-    const aboutMeText = "Hello! My name is Ishaan Dham, and I am currently a Junior at UC Berkeley. " 
-                      +  "I am a passionate and enthusiastic Computer Science student, and love to work with new technologies. "
-                      + "Currently, I am really interested in computer architecture, web development, and machine learning. "
-                      + "I am also learning more about cryptocurrencies as I find the technology used in blockchains fascinating. "
-                      + "Other than that I enjoy sports, gyming, and FPS games. "
-                      + "Feel free to contact me through mail or social media!"
+    const aboutMeText =  "Hi! I’m Ishaan Dham, and I am a Junior pursuing a bachelor’s degree in Computer Science at UC Berkeley. \
+    I am passionate and enthusiastic about all things computer science and constantly strive to learn about new and core technologies. \
+    Currently, I am fascinated by web development, machine learning, and computer architecture. \
+    In my free time, I enjoy sports, weight-lifting, and FPS games."
                       
 
     return (
         <div className="skillsPage" id="about">
-            <SubTitle title="About Me"></SubTitle>
-            
+                <SubTitle title="About Me"></SubTitle>
+                <Row id="imageRow">
+                    <Image id="headshot" src={Headshot} roundedCircle />
+                </Row>
+                <Row id="aboutMePara">
+                    <p>
+                        {aboutMeText}
+                    </p>
+                </Row>
+                <hr className="whiteLine"></hr>
+                <Row style={{paddingLeft: '10%', paddingRight: '10%'}}>
+                    <Col className="skillCol" m={6}>
+                        <SubTitle title="Blogs"></SubTitle>
+                        <BlogSection></BlogSection>
+                    </Col>
+                    <Col className="skillCol" m={6}>
+                        <SubTitle title="Skills"></SubTitle>
+                        <ProgressBarElem></ProgressBarElem>
+                    </Col>
+                </Row>
         </div>
     )
     // return ( 
