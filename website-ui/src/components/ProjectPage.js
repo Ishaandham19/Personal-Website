@@ -15,13 +15,15 @@ const projects={
                 'The goal of the game is to collect all the stars and escape the maze without encountering a monster. This was my first project in C++ ' +
                 'and I enjoyed making a quite basic yet fun game to play.',
         img: DungeonEscape,
-        link: 'https://github.com/Ishaandham19/DungeonEscape-console-game',
+        linkGh: 'https://github.com/Ishaandham19/DungeonEscape-console-game',
+        link: null
     },
     project2 : {
         name: 'Personal Website',
         text: 'Designed and built a professional personal wesbite to showcase projects, blogs, and interests. ' + 
               'Resuable front-end built using REACT/JSX, HTML, and CSS. ',
         img: PersonalWebsiteImg,
+        linkGh: null,
         link: null
     },
     project3 : {
@@ -29,6 +31,16 @@ const projects={
         text: 'Created a interrupt handler for MIPS processor that handles keyboard and display interrupts. ' +
                 'This project enables the user to perform I/O operations without the use of specific I/O commands and with memory mapped I/O instead.',
         img: InterruptHandlerMIPS,
+        linkGh: null,
+        link: null
+    },
+    /* Upadate this */
+    project4 : {
+        name: 'Spotify Favorite Song',
+        text: 'Created a interrupt handler for MIPS processor that handles keyboard and display interrupts. ' +
+                'This project enables the user to perform I/O operations without the use of specific I/O commands and with memory mapped I/O instead.',
+        img: InterruptHandlerMIPS,
+        linkGh: null,
         link: null
     }
 }
@@ -41,19 +53,13 @@ function ProjectPage() {
             <Container fluid id='projectsContainer'>
             <Row id='projectsRow'>
                 <Col xl={4} lg={6}>
-                    <ProjectCard project = {projects.project1}></ProjectCard>
+                    <ProjectCard project = {projects.project4}></ProjectCard>
                 </Col>
                 <Col xl={4} lg={6}>
                     <ProjectCard project = {projects.project2}></ProjectCard>
                 </Col>
                 <Col xl={4} lg={6}>
                     <ProjectCard project = {projects.project3}></ProjectCard>
-                </Col>
-                <Col xl={4} lg={6}>
-                    <ProjectCard project = {projects.project3}></ProjectCard>
-                </Col>
-                <Col xl={4} lg={6}>
-                    <ProjectCard project = {projects.project2}></ProjectCard>
                 </Col>
                 <Col xl={4} lg={6}>
                     <ProjectCard project = {projects.project1}></ProjectCard>

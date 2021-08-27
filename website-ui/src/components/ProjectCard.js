@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
-import {AiOutlineGithub} from 'react-icons/ai'
+import {AiOutlineGithub, AiOutlineLink} from 'react-icons/ai'
 import SubTitle from './SubTitle'
 
 
@@ -15,9 +15,17 @@ function ProjectCard({project}) {
                 {project.text}
             </Card.Text>
             <Card.Text id="addBtnBgCard">
-            <a className='icons' href={project.link}>
-                <AiOutlineGithub style={{color:'black'}}size={35}></AiOutlineGithub>
-            </a>
+            { project.linkGh && 
+                <a className='icons' href={project.linkGh}>
+                  <AiOutlineGithub style={{color:'black'}}size={35}></AiOutlineGithub>
+                </a>
+            }
+            {project.link && 
+                <a className='icons' href={project.link}>
+                  <AiOutlineLink style={{color:'black'}}size={35}></AiOutlineLink>
+                </a>
+            }
+
             </Card.Text>
         </Card.ImgOverlay>
     </Card>

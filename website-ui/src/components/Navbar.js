@@ -1,5 +1,5 @@
 import { Navbar, Nav } from 'react-bootstrap';
-
+import Resume from './Resume_Ishaan_Dham.pdf'
 
 export default function NavbarComp() {
     //for smooth transition
@@ -19,7 +19,7 @@ export default function NavbarComp() {
                     <Nav.Link id="navbar-link" onClick = {() => scrollTo('#projects')}>Projects</Nav.Link>
                     <Nav.Link id="navbar-link" onClick = {() => scrollTo('#contact')}>Contact</Nav.Link>
                     {/* <Nav.Link id="navbar-link" onClick = {() => scrollTo('#blog')}>Blog</Nav.Link> */}
-                    {/* <Nav.Link id="navbar-link" href="#">Resume</Nav.Link> */}
+                    <Nav.Link id="navbar-link" href={Resume} target="_blank">Resume</Nav.Link>
                 </Nav>
                 </div>
             </Navbar.Collapse>

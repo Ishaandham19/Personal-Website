@@ -6,6 +6,7 @@
 *{
   font-family: 'Montserrat', sans-serif;
 }
+/* For homepage background [still in development]*/
 .cw {
   position: relative;
   z-index: -1;
@@ -21,9 +22,12 @@
   align-content: center;
   position: relative;
   height: 100vh;
-  background-color: #231e23;
+  background-color:#231e23;
 }
-
+.backgroundImg{
+  width: 100%;
+  height: 100%;
+}
 /*Main title component styling */
 #mainTitle{
   position: absolute;
@@ -111,11 +115,6 @@
 .icons:hover{
   color: #08fdd8;
 }
-/* .homeIconsCol{
-  position: absolute;
-  left: 2%;
-  top: 35%;
-} */
 .homeIconsRow{
   padding: 10px;
 }
@@ -186,7 +185,7 @@
   height: 1px;
   border-width: 0;
   color: #DEEEEA;
-  background-color: #DEEEEA;
+  background-color: #08fdd8;
   margin: auto;
 }
 
@@ -204,6 +203,14 @@
   color: #08fdd8;
 }
 
+/* Education Page */
+.educationPage{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  background-color:#08fdd8;
+}
 /* Projects Page*/
 .projectPage{
   width: 100%;  
@@ -225,7 +232,7 @@
 #projectCard{
   width: 400px;
   height: 400px;
-  box-shadow: 2px 2px 4px 1px #08fdd8;
+  box-shadow: 2px 2px 5px 2px #08fdd8;
   margin: auto;
   margin-bottom: 10%;
   background-color: #DEEEEA;
@@ -274,15 +281,15 @@
   width: 100%;
   text-align: center;
   justify-content: center;
-  background-color: #231e23;
-  color: #DEEEEA;
-  padding: 5%;
+  background-color: rgb(40, 41, 41);
+  color: #08fdd8;
+  padding-bottom: 100px;
 }
 
 /* footer */
 .footer{
   color: #DEEEEA;
-  background-color: #231e23;
+  background-color: black;
   text-align: center;
 }
 
@@ -330,21 +337,6 @@
     box-shadow: 1px 2px 3px 1px #08fdd8;
     color: #DEEEEA;
     text-align: center;
-  }
-
-  /*Education Page styling*/
-  .card-img{   /*custom bootstrap class*/
-    max-width: 300px;
-    height: 300px;
-    padding: 2px;
-    opacity: 0.5;
-  }
-  .card{
-    margin-bottom: 20px;
-    box-shadow: 1px 1px 4px 1px #08fdd8;
-    font-size: large;
-    text-align: right;
-    font-size: 1rem;
   }
 
   /*Project page styling*/
