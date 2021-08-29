@@ -16,6 +16,7 @@ export default function NavbarComp() {
                 <Nav id="navbar-links" className="justify-content-center">
                     <Nav.Link id="navbar-link" onClick = {() => scrollTo('#home')}>Home</Nav.Link>
                     <Nav.Link id="navbar-link" onClick = {() => scrollTo('#about')}>About</Nav.Link>
+                    <Nav.Link id="navbar-link" onClick = {() => scrollTo('#education')}>Education</Nav.Link>
                     <Nav.Link id="navbar-link" onClick = {() => scrollTo('#projects')}>Projects</Nav.Link>
                     <Nav.Link id="navbar-link" onClick = {() => scrollTo('#contact')}>Contact</Nav.Link>
                     {/* <Nav.Link id="navbar-link" onClick = {() => scrollTo('#blog')}>Blog</Nav.Link> */}

@@ -7,7 +7,7 @@ function ContactPage() {
         <div className="contactPage" id="contact">
             <SubTitle title="Contact Me"></SubTitle>
             <h3>I would love to get in touch with you!</h3>
-            <h4>Feel free to email me or find me on ...</h4>
+            <h4>Feel free to get in contact with me</h4>
             <HomeIcons></HomeIcons>
         </div>
     )

@@ -23,8 +23,8 @@ const projects={
         text: 'Designed and built a professional personal wesbite to showcase projects, blogs, and interests. ' + 
               'Resuable front-end built using REACT/JSX, HTML, and CSS. ',
         img: PersonalWebsiteImg,
-        linkGh: null,
-        link: null
+        linkGh: 'https://github.com/Ishaandham19/Personal-Website',
+        link: 'http://ishaandham.com'
     },
     project3 : {
         name: 'Interrupt Handler',
@@ -53,17 +53,17 @@ function ProjectPage() {
             <Container fluid id='projectsContainer'>
             <Row id='projectsRow'>
                 <Col xl={4} lg={6}>
-                    <ProjectCard project = {projects.project4}></ProjectCard>
+                    <ProjectCard project = {projects.project3}></ProjectCard>
                 </Col>
                 <Col xl={4} lg={6}>
                     <ProjectCard project = {projects.project2}></ProjectCard>
                 </Col>
                 <Col xl={4} lg={6}>
-                    <ProjectCard project = {projects.project3}></ProjectCard>
-                </Col>
-                <Col xl={4} lg={6}>
                     <ProjectCard project = {projects.project1}></ProjectCard>
                 </Col>
+                {/* <Col xl={4} lg={6}>
+                    <ProjectCard project = {projects.project1}></ProjectCard>
+                </Col> */}
             </Row>
             </Container>
         </div>

@@ -143,9 +143,10 @@
   text-align: center;
   justify-content: center;
   width: 100%;
+  margin: 0%;
 }
 #aboutMePara p{ 
-  width: 60%;
+  width: 50%;
   color: #DEEEEA;
   padding: 2%;
   font-size: larger;
@@ -206,10 +207,29 @@
 /* Education Page */
 .educationPage{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   text-align: center;
   justify-content: center;
-  background-color:#08fdd8;
+  background-color: #00004C;
+  color: #DEEEEA;
+  overflow-x: hidden;
+}
+#school{
+  padding: 75px;
+  border-top: 1px solid #08fdd8;
+}
+.schoolDesc{
+  padding: 30px !important;
+}
+.schoolDesc h6{
+  padding: 10px;
+}
+.schoolDescTwoCol{
+  padding: 20px;
+}
+#degreeTitle{
+  padding: 5px !important;
+  color: #08fdd8 !important;
 }
 /* Projects Page*/
 .projectPage{
@@ -230,7 +250,7 @@
   justify-content: center;
 }
 #projectCard{
-  width: 400px;
+  max-width: 400px;
   height: 400px;
   box-shadow: 2px 2px 5px 2px #08fdd8;
   margin: auto;
@@ -321,24 +341,19 @@
     width: 80%;
     text-align: center;
     font-size: smaller;
-    text-align: left;
   }
-  .split{
-    width: 80%;
+  /*Education Page Styling*/
+  #school{
+    padding: 5px;
   }
-  .left-skillsPage{
-    padding: 20px;
-    border-right: 0px;
+  .schoolDesc{
+    font-size: small !important;
+    padding: 0;
   }
-  #cardElem{
-    align-self: center;
-    background-color: #231e23;
-    max-width: 30rem;
-    box-shadow: 1px 2px 3px 1px #08fdd8;
-    color: #DEEEEA;
-    text-align: center;
+  .schoolDesc h6{
+    font-size: small;
+    padding: 0px;
   }
-
   /*Project page styling*/
   #projectsContainer{
     padding: 0%;
@@ -350,6 +365,13 @@
   #projectImg{
     width: 300px;
     height: 300px;
+  }
+  #projectCard:hover .card-text{
+    font-size: 0.8rem;
+  }
+  /*Contact Page*/
+  .contactPage h3, .contactPage h4{
+    font-size: smaller;
   }
 }
 
