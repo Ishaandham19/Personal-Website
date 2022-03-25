@@ -1,31 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.87f1aaed.chunk.css",
-    "main.js": "/static/js/main.0fee5a88.chunk.js",
-    "main.js.map": "/static/js/main.0fee5a88.chunk.js.map",
+    "main.css": "/static/css/main.537adf88.chunk.css",
+    "main.js": "/static/js/main.52aa8930.chunk.js",
+    "main.js.map": "/static/js/main.52aa8930.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a6231c6a.js",
     "runtime-main.js.map": "/static/js/runtime-main.a6231c6a.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.cf323701.chunk.js": "/static/js/2.cf323701.chunk.js",
-    "static/js/2.cf323701.chunk.js.map": "/static/js/2.cf323701.chunk.js.map",
+    "static/js/2.512bb6f3.chunk.js": "/static/js/2.512bb6f3.chunk.js",
+    "static/js/2.512bb6f3.chunk.js.map": "/static/js/2.512bb6f3.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.87f1aaed.chunk.css.map": "/static/css/main.87f1aaed.chunk.css.map",
-    "static/js/2.cf323701.chunk.js.LICENSE.txt": "/static/js/2.cf323701.chunk.js.LICENSE.txt",
+    "static/css/main.537adf88.chunk.css.map": "/static/css/main.537adf88.chunk.css.map",
+    "static/js/2.512bb6f3.chunk.js.LICENSE.txt": "/static/js/2.512bb6f3.chunk.js.LICENSE.txt",
     "static/media/DungeonEscapeImage.d88d331a.png": "/static/media/DungeonEscapeImage.d88d331a.png",
     "static/media/Headshot2.4d36b819.jpg": "/static/media/Headshot2.4d36b819.jpg",
     "static/media/InterruptHandlerMIPS.3814da47.png": "/static/media/InterruptHandlerMIPS.3814da47.png",
     "static/media/PersonalWebsiteImg.48186743.png": "/static/media/PersonalWebsiteImg.48186743.png",
     "static/media/Resume_Ishaan_Dham.a5490692.pdf": "/static/media/Resume_Ishaan_Dham.a5490692.pdf",
-    "static/media/SpotifyProjectImg.b5b0b5ab.png": "/static/media/SpotifyProjectImg.b5b0b5ab.png",
     "static/media/moon-fullscreen.73acbeb4.jpg": "/static/media/moon-fullscreen.73acbeb4.jpg",
     "static/media/moon-smallscreen.d12406e9.jpg": "/static/media/moon-smallscreen.d12406e9.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a6231c6a.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.cf323701.chunk.js",
-    "static/css/main.87f1aaed.chunk.css",
-    "static/js/main.0fee5a88.chunk.js"
+    "static/js/2.512bb6f3.chunk.js",
+    "static/css/main.537adf88.chunk.css",
+    "static/js/main.52aa8930.chunk.js"
   ]
 }
