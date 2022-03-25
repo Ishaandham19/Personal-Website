@@ -84,9 +84,9 @@
 }
 
 /* Arrow down styling */
-.arrow{
+.arrow {
   position: absolute;
-  left: 50%;
+  left: 49%;
   top: 92%;
   background-color: transparent;
 }
@@ -128,7 +128,7 @@
   height: 100%; 
   text-align: center;
   justify-content: center;
-  background-color: #0090dd;
+  background-color: #00004C;
   overflow-x: hidden;
 }
 #imageRow{
@@ -148,7 +148,7 @@
 #aboutMePara p{ 
   width: 50%;
   color: #DEEEEA;
-  padding: 2%;
+  padding: 1%;
   font-size: larger;
 }
 .blogSec{
@@ -210,7 +210,7 @@
   height: 100%;
   text-align: center;
   justify-content: center;
-  background-color: #00004C;
+  background-color: #131862;
   color: #DEEEEA;
   overflow-x: hidden;
 }
@@ -237,7 +237,7 @@
   height: 100%;  
   text-align: center;
   justify-content: center;
-  background-color: #231e23;
+  background-color: #062974;
   overflow-x: hidden;
 }
 #projectsContainer{
@@ -301,7 +301,7 @@
   width: 100%;
   text-align: center;
   justify-content: center;
-  background-color: rgb(40, 41, 41);
+  background-color: #075285;
   color: #08fdd8;
   padding-bottom: 100px;
 }
