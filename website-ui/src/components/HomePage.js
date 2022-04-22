@@ -5,16 +5,17 @@ import MainTitle from './MainTitle';
 import Arrow from './Arrow';
 import backgroundImg from './images/moon-fullscreen.jpg'
 import backgroundImgSm from './images/moon-smallscreen.jpg'
+import { ParallaxBanner } from 'react-scroll-parallax';
+import { ParallaxBackground } from './ParallaxBackground.js';
+
 
 export default function HomePage() {
     return (
         <div className="homePage" id="home">
-            <picture>
-                <source srcset={backgroundImg} media="(min-width: 1000px)" className='backgroundImg'></source>
-                <img src={backgroundImgSm} alt="stars" className='backgroundImg'></img>
-            </picture>
+            <ParallaxBanner>
+                <ParallaxBackground></ParallaxBackground>
+            </ParallaxBanner>
             <NavbarComp></NavbarComp>
-            <MainTitle></MainTitle>
             <Arrow></Arrow>   
       </div>
     )
