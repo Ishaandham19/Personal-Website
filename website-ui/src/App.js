@@ -21,6 +21,7 @@ function App() {
       <SkillsPage></SkillsPage>
       <EducationPage></EducationPage>
       <ProjectPage></ProjectPage>
+      <ContactPage></ContactPage>
       <Footer></Footer>
       </>
     );

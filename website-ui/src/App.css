@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 :root {
-  --background_color: #00004C;
+  --background_color: #49219a;
   --secondary_color: #08fdd8;
   --primary_text_color: #deeeea;
   --secondary_text_color: #212529;
@@ -307,7 +307,7 @@
 /* footer */
 .footer{
   color: var(--primary_text_color);
-  background-color: black;
+  background-color: var(--secondary_text_color);
   text-align: center;
 }
 
