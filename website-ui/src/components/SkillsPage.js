@@ -8,9 +8,9 @@ import BlogSection from './BlogSection'
 
 
 function SkillsPage() {
-    const aboutMeText =  "Hi! I’m Ishaan Dham, and I am a Junior pursuing a bachelor’s degree in Computer Science at UC Berkeley. \
-    I am passionate and enthusiastic about all things computer science and constantly strive to learn about new and core technologies. \
-    Currently, I am fascinated by web development, machine learning, and computer architecture. \
+    const aboutMeText1=  "Hi! I’m Ishaan Dham, and I am a Senior pursuing a bachelor’s degree in Computer Science at UC Berkeley. \
+    I am passionate and enthusiastic about all things computer science and constantly strive to learn about new and core technologies. "
+    const aboutMeText2 = "Currently, I am fascinated by backend web development, systems and machine learning. \
     In my free time, I enjoy sports, weight-lifting, and FPS games."
                       
 
@@ -22,7 +22,9 @@ function SkillsPage() {
                 </Row>
                 <Row id="aboutMePara">
                     <p>
-                        {aboutMeText}
+                        {aboutMeText1}
+                        <br></br>
+                        {aboutMeText2}
                     </p>
                 </Row>
                 <hr className="whiteLine"></hr>

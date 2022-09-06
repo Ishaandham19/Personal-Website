@@ -4,12 +4,10 @@ import ProgressBar from 'react-bootstrap/ProgressBar'
 function ProgressBarElem() {
     const barElems = [
         {name:'Python',value: 90},
-        {name:'C++',value: 90},
+        {name:'C++/Golang/Java',value: 75},
         {name:'HTML/CSS/JS',value: 70},
+        {name:'Docker/Kubernetes', value: 65},
         {name:'React',value: 65},
-        // {name:'Java',value: 60},
-        // {name:'Machine Learning',value: 20},
-        // {name:'Assembly Language',value: 60},
         {name:'Node.js/Express',value: 65}
     ]
     return (

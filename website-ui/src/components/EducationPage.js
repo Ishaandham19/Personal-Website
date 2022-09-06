@@ -15,11 +15,14 @@ function EducationPage() {
                     <Row className="schoolDesc">
                         <Col md={6} sm={12}>
                             <h6>June 2021 - Expected May 2023</h6>
+                            <h6>Jim and Donna Gray Award (2022)</h6>
+                            <h6>Member of Open Computing Facility</h6>
                         </Col>
                         <Col md={6} sm={12} className="schoolDescTwoCol">
-                        Having transferred to UC Berkeley this summer, I have already begun taking interesting Computer Science courses. 
-                        I am taking in-depth courses in Data Structures and Algorithms, Linear Algebra and Circuits, and Discrete Math and Probability. 
-                        I am excited to take Machine Learning, Computer Architecture, and Databases classes in the upcoming semesters. 
+                        Having transferred to UC Berkeley summer of 2021, I have taken in-depth courses in Operating Systems, Databases, Data Structures and Algorithms, 
+                        Linear Algebra and Circuits, Discrete Math and Probability.
+                        <br></br>
+                        My favorite course so far was on Databases in which I built a functioning database system with support for B+ tree indices, efficient join algorithms, query optimization, multi-granularity locking, transactions, and database recovery.
                         </Col>
                     </Row>
                 </Container>
